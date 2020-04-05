@@ -1,0 +1,54 @@
+Computational Complexity
+
+Computational complexity is a field from computer science which analyzes algorithms based on the amount resources required for running it. The amount of required resources varies based on the input size, so the complexity is generally expressed as a function of n, where n is the size of the input.
+
+It is important to note that when analyzing an algorithm we can consider the time complexity and space complexity. The space complexity is basically the amount of memory space required to solve a problem in relation to the input size. Even though the space complexity is important when analyzing an algorithm, in this story we will focus only on the time complexity.
+
+Time Complexity
+
+As you’re reading this story right now, you may have an idea about what is time complexity, but to make sure we’re all on the same page, let’s start understanding what time complexity means with a short description from Wikipedia.
+
+    In computer science, the time complexity is the computational complexity that describes the amount of time it takes to run an algorithm. Time complexity is commonly estimated by counting the number of elementary operations performed by the algorithm, supposing that each elementary operation takes a fixed amount of time to perform.
+
+When analyzing the time complexity of an algorithm we may find three cases: best-case, average-case and worst-case. Let’s understand what it means.
+
+Suppose we have the following unsorted list [1, 5, 3, 9, 2, 4, 6, 7, 8] and we need to find the index of a value in this list using linear search.
+
+    best-case: this is the complexity of solving the problem for the best input. In our example, the best case would be to search for the value 1. Since this is the first value of the list, it would be found in the first iteration.
+    average-case: this is the average complexity of solving the problem. This complexity is defined with respect to the distribution of the values in the input data. Maybe this is not the best example but, based on our sample, we could say that the average-case would be when we’re searching for some value in the “middle” of the list, for example, the value 2.
+    worst-case: this is the complexity of solving the problem for the worst input of size n. In our example, the worst-case would be to search for the value 8, which is the last element from the list.
+
+Usually, when describing the time complexity of an algorithm, we are talking about the worst-case.
+
+Ok, but how we describe the time complexity of an algorithm?
+
+We use a mathematical notation called Big-O.
+
+Big-O Notation
+
+Big-O notation, sometimes called “asymptotic notation”, is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity.
+
+In computer science, Big-O notation is used to classify algorithms according to how their running time or space requirements grow as the input size (n) grows. This notation characterizes functions according to their growth rates: different functions with the same growth rate may be represented using the same O notation.
+
+Let’s see some common time complexities described in the Big-O notation.
+Table of common time complexities
+
+These are the most common time complexities expressed using the Big-O notation:
+
+╔══════════════════╦═════════════════╗
+║       Name       ║ Time Complexity ║
+╠══════════════════╬═════════════════╣
+║ Constant Time    ║       O(1)      ║
+╠══════════════════╬═════════════════╣
+║ Logarithmic Time ║     O(log n)    ║
+╠══════════════════╬═════════════════╣
+║ Linear Time      ║       O(n)      ║
+╠══════════════════╬═════════════════╣
+║ Quasilinear Time ║    O(n log n)   ║
+╠══════════════════╬═════════════════╣
+║ Quadratic Time   ║      O(n^2)     ║
+╠══════════════════╬═════════════════╣
+║ Exponential Time ║      O(2^n)     ║
+╠══════════════════╬═════════════════╣
+║ Factorial Time   ║       O(n!)     ║
+╚══════════════════╩═════════════════╝

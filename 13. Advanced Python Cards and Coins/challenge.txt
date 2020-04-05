@@ -1,0 +1,4 @@
+Card Validation:
+
+Coins:
+coins challenge, have 1000 coins all faced heads up, then go through all coins, taking every 2nd coin and turning it over. after the 1000th coin, come back and do it again for every 3rd coin and then every 4th coin until you reach the 1000th coin. After that tell how many coins are facing heads.
