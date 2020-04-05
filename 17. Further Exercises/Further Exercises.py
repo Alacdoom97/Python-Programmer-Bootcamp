@@ -136,6 +136,85 @@ list_numbers = [1,3,4,5]
 
 #     return new_str[::-1]
 
+# Question 11
+# Write a function that will convert an integer into binary.
+
+# def to_binary(number):
+#     print(f'{number} in binary is {number:08b})
+
+# Question 12
+# Write a function that calculates the sum of all integers up to n. Use the iterative method
+# and the formula and compare the results. (sum of n integers given by S = (n(n+1))/2)
+
+# def check_sums(number):
+#     sum_1 = 0
+#     for i,v in enumerate(range(number+1)):
+#         sum_1 = sum_1 + v
+#     sum_2 = (number * (number + 1))/2
+
+#     return sum_1, sum_2
+
+# Question 15
+# Write a function that takes a positive integer n and converts it into hours and minutes.
+# 45 would return 0h:45mins 135 would return 2h:15mins
+    
+# def convert_h_m(num):
+#   hours = num // 60
+#   mins = num % 60
+#   return str(hours) + 'h' + ':' + str(mins)  + ' mins'
+
+# Question 16
+# Write a function to determine whether all numbers in a list are unique.
+  
+# def unique_items(my_list):
+#     if len(my_list) == len(set(my_list)):
+#         return True
+#     else:
+#         return False
+
+# Question 17
+# Write a function to add two positive integers together without using the + operator.
+# (Note, this will require some research - start here https://en.wikipedia.org/wiki/Bitwise_operation)
+        
+# def no_plus_sum(a,b):
+
+#     while b != 0:
+#         carry = a & b
+#         a = a ^ b
+#         b = carry << 1
+#     return a
+
+# Question 18
+# Write a function that will calculate the number of divisors of a positive integer and return
+# those divisors.
+
+# def num_divisors(num):
+#     divisors = [i for i in range(1,num + 1) if num%i ==0]
+#     return (divisors, len(divisors))
+
+# Question 19
+# Write a function that uses bitwise operations to determine whether a number is odd or even.
+    
+# def odd_even(num):
+#     if (num & 1):
+#         print('Odd')
+#     print('Even')
+
+# Question 20
+# Write a function which prints the prime numbers in a given range.
+
+# def primes(start,end):
+#     primes = []
+#     for i in range(start,end+1):
+#         if i>1:
+#             for j in range(2,i):
+#                 if i%j == 0:
+#                     break
+
+#             else:
+#                 primes.append(i)
+#       return primes
+
 
 
 
